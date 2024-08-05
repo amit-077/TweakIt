@@ -1,0 +1,218 @@
+<div
+  id="draggable"
+  style="position: fixed; top: 0; left: 0; cursor: pointer; overflow: hidden"
+  class="doNotTargetIt"
+>
+  <div style="width: 100%; height: 1.5rem" class="doNotTargetIt toolBar">
+    <div class="doNotTargetIt closeBtn">
+      <p class="toolTitle themeChangeText doNotTargetIt">ThemeTweak</p>
+    </div>
+    <div class="doNotTargetIt closeBtn" id="closeModal">
+      <i class="fa-solid fa-xmark doNotTargetIt"></i>
+    </div>
+  </div>
+  <!-- <h1 style="font-size: 2rem; color: green">
+    This is a sample thing <i class="fa-solid fa-clock"></i>
+  </h1> -->
+  <div id="srkMainDiv" class="doNotTargetIt">
+    <!-- Select icon -->
+    <div class="doNotTargetIt" id="extenButtons">
+      <div id="selectIconDiv" class="doNotTargetIt">
+        <i class="fa-solid fa-arrow-pointer doNotTargetIt" id="selectIcon"></i>
+      </div>
+
+      <!-- Undo Button -->
+      <div class="doNotTargetIt">
+        <button class="doNotTargetIt" id="undoButton">
+          <i class="fa-solid fa-rotate-left doNotTargetIt"></i>&nbsp;&nbsp;Undo
+        </button>
+      </div>
+    </div>
+
+    <!-- Horizontal Row -->
+    <div
+      style="
+        height: 0.1px;
+        margin-top: 1rem;
+        width: 100rem;
+        background-color: #ddd;
+        position: relative;
+        left: -10rem;
+      "
+    ></div>
+    <!-- Horizontal Row -->
+
+    <!-- Show BG colors for elements to apply -->
+    <div id="bgColorSelectDiv" class="doNotTargetIt">
+      <p class="doNotTargetIt themeChangeText">Background Color</p>
+      <div id="bgColorsGrid" class="doNotTargetIt">
+        <div
+          class="bgColorToSelect red doNotTargetIt"
+          style="background-color: red"
+        ></div>
+        <div
+          class="bgColorToSelect green doNotTargetIt"
+          style="background-color: green"
+        ></div>
+        <div
+          class="bgColorToSelect blue doNotTargetIt"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="bgColorToSelect orange doNotTargetIt"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="bgColorToSelect purple doNotTargetIt"
+          style="background-color: purple"
+        ></div>
+        <div
+          class="bgColorToSelect violet doNotTargetIt"
+          style="background-color: violet"
+        ></div>
+        <div
+          class="bgColorToSelect yellow doNotTargetIt"
+          style="background-color: yellow"
+        ></div>
+
+        <div class="doNotTargetIt">
+          <input
+            class="doNotTargetIt"
+            type="color"
+            id="chooseAnyBgColor"
+            name="favcolor"
+            value="#5580e9"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Row -->
+    <div
+      style="
+        height: 0.1px;
+        margin-top: 1rem;
+        width: 100rem;
+        background-color: #ddd;
+        position: relative;
+        left: -10rem;
+      "
+    ></div>
+    <!-- Horizontal Row -->
+
+    <!-- Show normal colors for elements to apply -->
+    <div id="colorSelectDiv" class="doNotTargetIt">
+      <p class="doNotTargetIt themeChangeText">Colors</p>
+      <div id="colorsGrid" class="doNotTargetIt">
+        <div
+          class="colorToSelect red doNotTargetIt"
+          style="background-color: red"
+        ></div>
+        <div
+          class="colorToSelect green doNotTargetIt"
+          style="background-color: green"
+        ></div>
+        <div
+          class="colorToSelect blue doNotTargetIt"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="colorToSelect orange doNotTargetIt"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="colorToSelect purple doNotTargetIt"
+          style="background-color: purple"
+        ></div>
+        <div
+          class="colorToSelect violet doNotTargetIt"
+          style="background-color: violet"
+        ></div>
+        <div
+          class="colorToSelect yellow doNotTargetIt"
+          style="background-color: yellow"
+        ></div>
+        <div class="doNotTargetIt">
+          <input
+            type="color"
+            id="chooseAnyColor"
+            name="favcolor"
+            class="doNotTargetIt"
+            value="#1a48ba"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Row -->
+    <div
+      style="
+        height: 0.1px;
+        margin-top: 1rem;
+        width: 100rem;
+        background-color: #ddd;
+        position: relative;
+        left: -10rem;
+      "
+    ></div>
+    <!-- Horizontal Row -->
+
+    <!-- Show BG colors for elements to apply -->
+    <div id="borderColorSelectDiv" class="doNotTargetIt">
+      <p class="doNotTargetIt themeChangeText">Border Color</p>
+      <div id="borderColorsGrid" class="doNotTargetIt">
+        <div
+          class="borderColorToSelect red doNotTargetIt"
+          style="background-color: red"
+        ></div>
+        <div
+          class="borderColorToSelect green doNotTargetIt"
+          style="background-color: green"
+        ></div>
+        <div
+          class="borderColorToSelect blue doNotTargetIt"
+          style="background-color: blue"
+        ></div>
+        <div
+          class="borderColorToSelect orange doNotTargetIt"
+          style="background-color: orange"
+        ></div>
+        <div
+          class="borderColorToSelect purple doNotTargetIt"
+          style="background-color: purple"
+        ></div>
+        <div
+          class="borderColorToSelect violet doNotTargetIt"
+          style="background-color: violet"
+        ></div>
+        <div
+          class="borderColorToSelect yellow doNotTargetIt"
+          style="background-color: yellow"
+        ></div>
+
+        <div class="doNotTargetIt">
+          <input
+            class="doNotTargetIt"
+            type="color"
+            id="chooseAnyBorderColor"
+            name="favcolor"
+            value="#042985"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal Row -->
+    <div
+      style="
+        height: 0.1px;
+        margin-top: 1rem;
+        width: 100rem;
+        background-color: #ddd;
+        position: relative;
+        left: -10rem;
+      "
+    ></div>
+    <!-- Horizontal Row -->
+  </div>
+</div>

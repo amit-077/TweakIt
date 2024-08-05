@@ -1,0 +1,193 @@
+/* h1{
+    background-color: blue;
+}  */
+
+#draggable {
+  box-shadow: 0 0 1px #888;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 9999;
+}
+
+#srkMainDiv {
+  height: 24rem;
+  width: 18rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 0 0 2px #888;
+  padding: 2rem 1rem 2rem 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 9999;
+}
+
+#extenButtons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* #undoButton{
+
+} */
+
+#undoButton {
+  border: none;
+  background-color: transparent;
+  box-shadow: 0 0 1px #888;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+
+#undoButton:hover {
+  background-color: #f1f1f1;
+}
+
+#undoButton:disabled {
+  background-color: #eaeaea;
+}
+
+.toolTitle {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+.toolBar {
+  background-color: white;
+  box-shadow: 0 0 2px #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+.closeBtn {
+  margin-right: 0.5rem;
+}
+
+#closeModal {
+  padding: 0.1rem 0.3rem;
+}
+
+#closeModal:hover {
+  background-color: #ebebeb;
+}
+
+#selectIconDiv {
+  display: inline;
+}
+
+#selectIconDiv i {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  box-shadow: 0 0 1px #888;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s;
+}
+
+#selectIconDiv i:hover {
+  background-color: #f1f1f1;
+}
+
+#bgColorSelectDiv,
+#colorSelectDiv,
+#borderColorSelectDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#colorSelectDiv {
+  margin-top: 1.2rem;
+}
+
+#bgColorSelectDiv p {
+  margin: 0.3rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#colorSelectDiv p {
+  margin: 0.3rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#borderColorSelectDiv p {
+  margin: 0.3rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Color picker style */
+input[type="color" i] {
+  border-radius: 50%;
+  inline-size: 30px;
+  block-size: 30px;
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(153, 153, 153);
+}
+
+input[type="color" i]::-webkit-color-swatch-wrapper {
+  padding: 1px;
+}
+
+input[type="color" i]::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+input[type="color" i]::-moz-color-swatch {
+  border-radius: 50%;
+}
+/* color picker style */
+
+.bgColorToSelect,
+.colorToSelect,
+.borderColorToSelect {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: none;
+  box-shadow: 0 0 1px #555;
+  border-radius: 0.5rem;
+}
+
+#bgColorsGrid,
+#colorsGrid,
+#borderColorsGrid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  flex-direction: row;
+  margin-top: 0.5rem;
+}
+
+.themeChangeText {
+  font-family: "Poppins", sans-serif;
+}
+
+#srkMainDiv::-webkit-scrollbar-track {
+  background-color: red; /* Change to desired color */
+}
+
+/* Modify the scrollbar thumb */
+#srkMainDiv::-webkit-scrollbar-thumb {
+  background-color: red; /* Change to desired color */
+  border-radius: 5px; /* Add border radius */
+}
+
+/* Modify the scrollbar when hovered */
+#srkMainDiv::-webkit-scrollbar-thumb:hover {
+  background-color: red; /* Change to desired color */
+}
